@@ -29,7 +29,6 @@ async function getRepoTopics() {
                     console.error('Error writing to file', err);
                 } else {
                     console.log('JSON file has been saved.');
-                    // fs.writeFileSync('errors.log', err);
                 }
             });
         }
