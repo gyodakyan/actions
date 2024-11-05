@@ -30,8 +30,8 @@ jobs:
       # Commit and push changes back to your repository
       - name: Commit changes
         run: |
-          git config --global user.name "gyodakyan"
-          git config --global user.email "ara.gyodakyan@gmail.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Update repository with fetched data"
           git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/gyodakyan/actions.git HEAD:main
