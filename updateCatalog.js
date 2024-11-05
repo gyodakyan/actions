@@ -29,13 +29,13 @@ async function getRepoTopics() {
                     console.error('Error writing to file', err);
                 } else {
                     console.log('JSON file has been saved.');
-                    fs.writeFileSync('errors.log', err);
+                    // fs.writeFileSync('errors.log', err);
                 }
             });
         }
     } catch (error) {
         console.error("Error fetching repository topics:", error.message);
-        fs.writeFileSync('errors.log', error.message);
+        // fs.writeFileSync('errors.log', error.message);
     }
 }
 
@@ -57,7 +57,7 @@ async function getRepositoriesByTopic(topic) {
 
     } catch (error) {
         console.error("Error fetching repositories:", error);
-        fs.writeFileSync('errors.log', error.message);
+        //fs.writeFileSync('errors.log', error.message);
     }
 }
 
