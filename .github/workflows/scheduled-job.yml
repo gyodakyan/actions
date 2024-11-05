@@ -2,7 +2,7 @@ name: Scheduled Data Fetch and Update
 
 on:
   schedule:
-    - cron: "*/5 * * * *" # Runs every day at midnight
+    - cron: "0 0 * * *" # Runs every day at midnight
 
 jobs:
   update-repo:
